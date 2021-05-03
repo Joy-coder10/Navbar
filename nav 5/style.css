@@ -1,0 +1,88 @@
+@import url(maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+body{
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.logo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000;
+    /* float: left; */
+    /* padding: -5px 30px; */
+    width: 40%;
+    display: flex;
+    letter-spacing: 0.5rem;
+}
+.menu-bar{
+    background: rgb(150, 28, 231);
+    text-align: center;
+}
+.menu-bar ul{
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+    background: rgb(115, 10, 185);
+    border-radius: 3px;
+}
+/*---dropdown----*/
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display:block;
+    position: absolute;
+    background: rgb(143, 40, 211);
+    margin-top: 15px;
+    margin-left: -25px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff; 
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: red;
+}
+/* .menu-bar ul li .sub-menu-1 ul li.hover-me.fa-caret-right{
+    color: #000;
+    float: right;} */
+.sub-menu-2{
+    display: none;
+}
+.fa-caret-right{
+    align-items: flex-end;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    background: rgb(143, 40, 211);
+}
